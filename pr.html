@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Header Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            animation: slideDown 1s ease;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        @keyframes slidedown{
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        main {
+            padding: 30px;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>My Website</h2>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome!</h1>
+        <p>Header animation example.</p>
+    </main>
+
+    
+</body>
+<script>
+let mark=80;
+let b=5;
+let c=80;
+
+if(mark>b || mark>c){
+    console.log("not crt");
+    
+}
+else{
+    console.log("kks");
+    
+}
+</script>
+</html>

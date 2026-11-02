@@ -1,0 +1,30 @@
+.y{
+    
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 15px;
+}
+.card{
+ padding: 25px;
+ text-align: center;
+ background: #000;
+
+}
+.hero{
+   background-image: url(el.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+background-position: center;
+height: 250px;
+color: aliceblue;
+width: 20%;
+height: 250px;
+}
+.hero img{
+    transform: scale(0.6);
+
+}
+

@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HariTech - Honey Products</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        .navbar {
+            z-index: 1000;
+        }
+
+        /* Main Honey Banner */
+        .h {
+            background-image: url("honey.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-content {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        /* Common image style */
+        .honey-images img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Deal of the Day */
+        .deal {
+            background-image: url("f.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 300px;
+        }
+
+        .deal-box {
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Discount Banner */
+        .u {
+            background-image: url("honey9.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Latest Products */
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card {
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Responsive images */
+        @media (max-width: 576px) {
+            .h {
+                min-height: 400px;
+            }
+
+            .honey-images img {
+                height: 100px;
+            }
+
+            .product-card img {
+                height: 130px;
+            }
+
+            .product-card .card-body {
+                padding: 8px;
+            }
+
+            .product-card h6 {
+                font-size: 13px;
+            }
+
+            .product-card p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar sticky-top bg-light shadow py-3">
+            <div class="container-fluid px-4 d-flex flex-wrap
+                        justify-content-between align-items-center gap-3">
+
+                <h4 class="mb-0">HariTech</h4>
+
+                <div class="d-flex flex-wrap align-items-center gap-3">
+
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#">Career</a>
+
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i class="fa fa-bell-o" aria-hidden="true"></i>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN HONEY BANNER -->
+    <section class="h p-4">
+
+        <div class="container">
+            <div class="banner-content text-center p-4 shadow-lg">
+
+                <h2 class="mb-4">Amazing Pure Honey Taste</h2>
+
+                <p>
+                    Better than honey in the world!
+                    Honey is tasty! Best honey in my life!
+                </p>
+
+                <button class="btn btn-danger mt-3">
+                    Taste Here
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- THREE HONEY IMAGES IN ONE ROW -->
+    <section class="container my-5">
+
+        <div class="border shadow-lg rounded p-4">
+
+            <h3 class="text-center mb-4">Our Honey Collection</h3>
+
+            <div class="row g-3 honey-images">
+
+                <div class="col-4">
+                    <img src="honey1.jpg" alt="Honey 1">
+                </div>
+
+                <div class="col-4">
+                    <img src="honey4.jpg" alt="Honey 2">
+                </div>
+
+                <div class="col-4">
+                    <img src="honey3.jpg" alt="Honey 3">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEAL OF THE DAY -->
+    <section class="deal py-4">
+
+        <div class="container text-center">
+
+            <h1 class="text-white mt-3">Deal Of The Day</h1>
+
+            <p class="text-white mt-3">
+                Always learn, always grow!
+                Discover our delicious honey products.
+            </p>
+
+            <div class="row g-2 mt-4">
+
+                <div class="col-2">
+                    <div class="deal-box border rounded p-2">
+                        <h3>00</h3>
+                        <small>Days</small>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="deal-box border rounded p-2">
+                        <h3>00</h3>
+                        <small>Hours</small>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="deal-box border rounded p-2">
+                        <h3>00</h3>
+                        <small>Minutes</small>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="deal-box border rounded p-2">
+                        <h3>00</h3>
+                        <small>Seconds</small>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="deal-box border rounded p-2">
+                        <h3>50</h3>
+                        <small>Percent</small>
+                    </div>
+                </div>
+
+                <div class="col-2">
+                    <div class="deal-box border rounded p-2">
+                        <h3>01</h3>
+                        <small>Offer</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BEST SELLERS -->
+    <section class="container my-5">
+
+        <div class="text-center mb-4">
+
+            <h3>Best Sellers</h3>
+
+            <p class="text-danger">────── ✦ ──────</p>
+
+        </div>
+
+        <div class="row g-3 honey-images">
+
+            <div class="col-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="honey1.jpg" alt="Honey Product 1">
+
+                    <div class="card-body text-center">
+                        <h6>Pure Honey</h6>
+                        <p class="text-muted">Natural honey</p>
+                        <h6>₹200</h6>
+                        <button class="btn btn-outline-danger btn-sm">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="honey4.jpg" alt="Honey Product 2">
+
+                    <div class="card-body text-center">
+                        <h6>Organic Honey</h6>
+                        <p class="text-muted">Fresh and pure</p>
+                        <h6>₹250</h6>
+                        <button class="btn btn-outline-danger btn-sm">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="honey3.jpg" alt="Honey Product 3">
+
+                    <div class="card-body text-center">
+                        <h6>Natural Honey</h6>
+                        <p class="text-muted">Healthy choice</p>
+                        <h6>₹300</h6>
+                        <button class="btn btn-outline-danger btn-sm">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="honey6.jpg" alt="Honey Product 4">
+
+                    <div class="card-body text-center">
+                        <h6>Fresh Honey</h6>
+                        <p class="text-muted">Delicious taste</p>
+                        <h6>₹280</h6>
+                        <button class="btn btn-outline-danger btn-sm">
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCOUNT BANNER -->
+    <section class="u my-5 p-4">
+
+        <div class="container text-center">
+
+            <h1 class="text-danger">
+                <small class="text-dark">UP TO</small> 50%
+            </h1>
+
+            <h3 class="text-dark">Pure & Healthy Honey</h3>
+
+            <button class="btn btn-outline-danger mt-3">
+                Explore Products
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- LATEST HONEY PRODUCTS -->
+    <section class="container my-5">
+
+        <div class="text-center mb-4">
+
+            <h3>Latest Honey Products</h3>
+
+            <p class="text-danger">────── ✦ ──────</p>
+
+        </div>
+
+        <!-- First Row -->
+        <div class="row g-4">
+
+            <div class="col-6 col-md-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <img src="el.jpg" class="card-img-top" alt="Latest Product 1">
+
+                    <div class="card-body text-center">
+                        <h6>Honey Product 1</h6>
+                        <p>Natural and tasty honey</p>
+                        <button class="btn btn-danger btn-sm">View Product</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <img src="honey4.jpg" class="card-img-top" alt="Latest Product 2">
+
+                    <div class="card-body text-center">
+                        <h6>Honey Product 2</h6>
+                        <p>Pure and fresh honey</p>
+                        <button class="btn btn-danger btn-sm">View Product</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <img src="honey3.jpg" class="card-img-top" alt="Latest Product 3">
+
+                    <div class="card-body text-center">
+                        <h6>Honey Product 3</h6>
+                        <p>Healthy honey choice</p>
+                        <button class="btn btn-danger btn-sm">View Product</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Second Row -->
+        <div class="row g-4 mt-1">
+
+            <div class="col-6 col-md-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <img src="el.jpg" class="card-img-top" alt="Latest Product 4">
+
+                    <div class="card-body text-center">
+                        <h6>Honey Product 4</h6>
+                        <p>Delicious natural honey</p>
+                        <button class="btn btn-danger btn-sm">View Product</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <img src="honey4.jpg" class="card-img-top" alt="Latest Product 5">
+
+                    <div class="card-body text-center">
+                        <h6>Honey Product 5</h6>
+                        <p>Quality honey product</p>
+                        <button class="btn btn-danger btn-sm">View Product</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="card product-card h-100 shadow-sm">
+                    <img src="honey3.jpg" class="card-img-top" alt="Latest Product 6">
+
+                    <div class="card-body text-center">
+                        <h6>Honey Product 6</h6>
+                        <p>Pure honey for everyone</p>
+                        <button class="btn btn-danger btn-sm">View Product</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOTTOM BANNER -->
+    <section
+        class="text-center text-white d-flex align-items-center justify-content-center"
+        style="background-image: url('honey7.jpg');
+               background-size: cover;
+               background-position: center;
+               min-height: 250px;">
+
+        <div class="p-4">
+            <h2>Enjoy The Taste Of Pure Honey</h2>
+            <p>Healthy, natural and delicious.</p>
+            <button class="btn btn-warning">Shop Now</button>
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3">
+        <p class="mb-0">
+            &copy; 2026 HariTech. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
